@@ -45,9 +45,9 @@ section article {
 }
 
 section article.informacion {
+    border: 0.1rem solid black;
     border-radius: 0.5rem;
     padding: 0.55rem;
-    box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.4);
     margin: 1rem 0 1rem 0;
 }
 
@@ -63,10 +63,10 @@ section article h2, section article p {
     margin: 1rem 1rem;
 }
 
-section p.minititulo {
-    text-align: center;
-    font-size: 3rem;
-    margin: 0.5rem 0 0.7rem 0;
+section div p.minititulo {
+    display: flex;
+    justify-content: center;
+    margin: 0.5rem auto 0.7rem auto;
 }
 
 .fblanco {
@@ -93,8 +93,9 @@ section p.minititulo {
 }
 
 .container div {
-    box-shadow: 0px 0.1rem 0.4rem rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 0.1rem 0.4rem rgba(0, 0, 0, 0.2);
     border-radius: 0.5rem;
+    border: 0.2rem outset rgb(255, 255, 255);
     padding: 0.9rem;
 }
 
@@ -102,6 +103,10 @@ section p.minititulo {
 .container a:link{
     text-decoration: none;
     color: black;
+}
+
+.container div:active {
+    border-style: inset;
 }
 
 /*------------------Sección de los footers----------------*/
@@ -169,6 +174,10 @@ footer p {
         grid-template-columns: repeat(2, 1fr);
         max-width: 85%;
     }
+
+    .minititulo {
+        font-size: 10vw;
+    }
 }
 
 @media screen and (min-width: 600px) and (max-width: 900px) {
@@ -185,6 +194,10 @@ footer p {
         grid-template-columns: repeat(2, 1fr);
         max-width: 85%;
     }
+
+    .minititulo {
+        font-size: 6vw;
+    }
 }
 
 @media screen and (min-width: 900px) {
@@ -200,5 +213,9 @@ footer p {
     .container {
         grid-template-columns: repeat(3, 1fr);
         max-width: 75%;
+    }
+
+    .minititulo {
+        font-size: 4vw;
     }
 }
