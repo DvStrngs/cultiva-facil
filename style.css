@@ -32,6 +32,8 @@ header div {
     margin: auto 0;
 }
 
+/*----------------Sections--------------------*/
+
 section {
     max-width: 85%;
     max-height: none;
@@ -59,6 +61,12 @@ section article h2 {
 
 section article h2, section article p {
     margin: 1rem 1rem;
+}
+
+section p.minititulo {
+    text-align: center;
+    font-size: 3rem;
+    margin: 0.5rem 0 0.7rem 0;
 }
 
 .fblanco {
@@ -95,6 +103,8 @@ section article h2, section article p {
     text-decoration: none;
     color: black;
 }
+
+/*------------------Sección de los footers----------------*/
 
 footer{
     background-color: rgb(58, 58, 58);
