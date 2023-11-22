@@ -143,3 +143,52 @@ footer div a:visited {
 footer p {
     margin: 0;
 }
+
+/* Media queries */
+@media screen and (max-width: 600px) {
+    /* Estilos para móviles */
+    #titulo {
+        font-size: 10vw;
+    }
+
+    #logo {
+        width: 20%;
+    }
+
+    .container {
+        grid-template-columns: 1fr;
+        max-width: 90%;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 900px) {
+    /* Estilos para tablets */
+    #titulo {
+        font-size: 8vw;
+    }
+
+    #logo {
+        width: 15%;
+    }
+
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 85%;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    /* Estilos para desktops */
+    #titulo {
+        font-size: 7vw;
+    }
+
+    #logo {
+        width: 10%;
+    }
+
+    .container {
+        grid-template-columns: repeat(3, 1fr);
+        max-width: 75%;
+    }
+}
