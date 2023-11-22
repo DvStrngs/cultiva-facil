@@ -1,0 +1,145 @@
+html {
+    font-family: Oswald, sans-serif;
+}
+
+body {
+    margin: 0 0;
+    background-color: honeydew;
+}
+
+header {
+    background-color: forestgreen;
+    display: block;
+    padding: 2rem;
+    margin: 0;
+    margin-bottom: 1rem;
+}
+
+header div {
+    display: flex;
+    justify-content: center;
+}
+
+#titulo {
+    color: white;
+    font-size: 7vw;
+    margin: 0;
+}
+
+#logo {
+    width: 10%;
+    /*height: 7rem;*/
+    margin: auto 0;
+}
+
+section {
+    max-width: 85%;
+    max-height: none;
+    margin: 0 auto;
+}
+
+section article {
+   height: 25%;
+}
+
+section article.informacion {
+    border-radius: 0.5rem;
+    padding: 0.55rem;
+    box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.4);
+    margin: 1rem 0 1rem 0;
+}
+
+section article p {
+    text-align: justify;
+}
+
+section article h2 {
+    text-align: center;
+}
+
+section article h2, section article p {
+    margin: 1rem 1rem;
+}
+
+.fblanco {
+    background-color: rgb(255, 255, 255);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    max-width: 75%;
+    margin: 0 auto ;
+}
+
+.container img {
+    width: 100%;
+    height: auto;
+}
+
+.container p {
+    margin: 0;
+    font-size: 14px;
+    text-align: center;
+}
+
+.container div {
+    box-shadow: 0px 0.1rem 0.4rem rgba(0, 0, 0, 0.4);
+    border-radius: 0.5rem;
+    padding: 0.9rem;
+}
+
+
+.container a:link{
+    text-decoration: none;
+    color: black;
+}
+
+footer{
+    background-color: rgb(58, 58, 58);
+    padding: 1.5rem 2rem;
+    color: white;
+    align-content: center;
+
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+
+    margin-top: 2.5rem ;
+}
+
+footer div {
+    float: right;
+    margin: auto 0;
+}
+
+footer div a {
+    transition: color 0.3s ease;
+    margin: 0 0.30rem;
+    text-decoration: none;
+    border: 1px white solid;
+    border-style: outset;
+    border-radius: 0.25rem;
+    padding: 0.3rem;
+}
+
+footer div a:link {
+    color: white;
+}
+
+footer div a:hover {
+    color: rgb(187, 187, 187);
+}
+
+footer div a:active {
+    border-style: inset;
+}
+
+footer div a:visited {
+    color: white;
+}
+
+footer p {
+    margin: 0;
+}
